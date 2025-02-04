@@ -18,20 +18,6 @@ bool repeating_timer_callback(struct repeating_timer *t)
     gpio_put(LED_YELLOW, 0);
     gpio_put(LED_RED, 0);
 
-    // Para rodar na placa BitDogLab comente esse switch
-    //  Alterna os estados usando switch-case
-    //  switch (state) {
-    //      case 0:
-    //          gpio_put(LED_RED, 1);
-    //          printf("Vermelho ACESO\n");
-    //          break;
-
-    //     case 2:
-    //         gpio_put(LED_GREEN, 1);
-    //         printf("Verde ACESO\n");
-    //         break;
-    // }
-
     // Alterna os estados usando switch-case
     switch (state)
     {
